@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Othergit tsa
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+:root {
+    --Paars: #5722CD;
+    --Blauw: #4845E4;
+    --Roze: #ED4385;
+    --Zwart: #0C0C0C;
+    --Lichtpaars: #F2F0FF;
+    --lichtgrijs: #F3F6F9;
+    --Grijs: #7A7A7A
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+body {
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--lichtgrijs);
+}
+
+button {
+    background-color: var(--Roze);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    color: var(--lichtgrijs);
+    border: none;
+    padding: 12px 24px;
+    text-transform: uppercase;
+
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+
+
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid orange;
+}
+
+.inner-container {
+    flex-basis: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 40px 350px;
+    border: 2px solid black;
+}
+
+
+
+.text-settings {
+
+}
+
+.article-settings-section-2 {
+
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+
+
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+.header-text {
+    background-color: #6149e8;
+    color: white;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px 140px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 400px;
+
+}
+
+.header-nav ul li {
+    font-size: 20px;
+}
+
+.image-header {
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#image\ header {
+    height: 5em;
+}
+
+/* --------------- 4.2 section 1 ------------------- */
+.section-1 {
+
+}
+
+/* --------------- 4.2 section 2 ------------------- */
+.section-2 {
+
+}
+.article-section-2 {
+
+}
+.article-settings-section-2 {
+
+}
+
+
+
+/* --------------- 4.2 section 3 ------------------- */
+.section-3 {
+
+}
+.article-section-3 {
+
+}
+.article-settings-section-3 {
+
+}
+
+/* --------------- 4.2 section 4 ------------------- */
+.section-4 {
+
+}
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
