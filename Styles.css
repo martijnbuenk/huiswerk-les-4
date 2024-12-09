@@ -17,50 +17,57 @@
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 :root {
-    --Paars: #5722CD;
-    --Blauw: #4845E4;
-    --Roze: #ED4385;
-    --Zwart: #0C0C0C;
-    --Lichtpaars: #F2F0FF;
-    --lichtgrijs: #F3F6F9;
-    --Grijs: #7A7A7A
+    /*engels vertalen*/
+    --Purple: #5722CD;
+    --Blue: #4845E4;
+    --Pink: #ED4385;
+    --Black: #0C0C0C;
+    --Lightpurple: #F2F0FF;
+    --Lightgrey: #F3F6F9;
+    --Grey: #7A7A7A
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box;}
-body {
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h5 {
     font-family: 'Merriweather', serif;
     font-size: 40px;
 }
 
-a:link {
-    text-decoration: none;
-    color: var(--lichtgrijs);
+h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
 }
 
+
 button {
-    background-color: var(--Roze);
-    border-radius: 20px;
+    background-color: var(--Pink);
+    font-family: 'roboto', sans-serif;
+    border-radius: 40px;
+    height: 60px;
+    width: 200px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    color: var(--lichtgrijs);
+    color: var(--Lightgrey);
     border: none;
     padding: 12px 24px;
     text-transform: uppercase;
 
 }
+a:link {
+    text-decoration: none;
+}
+
 
 /* ------------------------------- 2. Typography ----------------------------------- */
-p {
-    font-size: 24px;
-    font-weight: 300;
-}
+
 
 
 /* ------------------------------- 3. Layout --------------------------------------- */
@@ -74,7 +81,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid orange;
+    /*border: 5px solid var(--Purple);*/
 }
 
 .inner-container {
@@ -86,7 +93,7 @@ p {
     justify-content: space-evenly;
     text-align: center;
     margin: 40px 350px;
-    border: 2px solid black;
+    border: 5px solid orange;
 }
 
 
@@ -107,9 +114,24 @@ p {
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+.inner-container-header {
+
+}
+
+
 .header-text {
     background-color: #6149e8;
     color: white;
+}
+
+.header-text p {
+    font-size: 24px;
+    font-weight: 300;
+
+}
+
+.header-nav a:link {
+    color: var(--Lightgrey);
 }
 
 .header-nav {
@@ -134,7 +156,7 @@ p {
 }
 
 .image-header {
-display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
@@ -144,37 +166,122 @@ display: flex;
 }
 
 /* --------------- 4.2 section 1 ------------------- */
-.section-1 {
+.container-section-1 {
+    color: #4845E4;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'roboto', serif;
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 75px;
+    padding-bottom: 80px;
+    border: dashed black 3px;
 
 }
 
 /* --------------- 4.2 section 2 ------------------- */
 .section-2 {
+    background-color: var(--Lightgrey);
+
 
 }
 .article-section-2 {
+    flex-basis: 500px;
+
+    display: flex;
+    flex-direction: column;
+    border: orange dashed;
 
 }
 .article-settings-section-2 {
-
+    display: flex;
+    flex-direction: row;
+    border: greenyellow dashed;
+    margin: 45px;
 }
 
+.article-settings-section-2-div {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-evenly;
+    border: #ED4385 dashed;
+    padding: 110px;
+ }
 
+.article-settings-section-2-div img {
+    width: 15%;
+}
+
+.article-settings-section-2-div a{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+ .article-image-section-2 {
+     display: flex;
+     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+ /*    size afbeelding  */
+
+ }
 
 /* --------------- 4.2 section 3 ------------------- */
 .section-3 {
 
 }
+
 .article-section-3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 80px;
+    flex-wrap: wrap;
 
 }
+
 .article-settings-section-3 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 373px;
+    border: var(--Blue);
 
 }
+.article-section-3-img {
+    height: 3em;
+}
+
+.title-article {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
 
 /* --------------- 4.2 section 4 ------------------- */
 .section-4 {
+    background-color: #6149e8;
 
+}
+
+.form-section-4 {
+    color: white;
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
