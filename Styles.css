@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Othergit tsa
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+:root {
+    /*engels vertalen*/
+    --Purple: #5722CD;
+    --Blue: #4845E4;
+    --Pink: #ED4385;
+    --Black: #0C0C0C;
+    --Lightpurple: #F2F0FF;
+    --Lightgrey: #F3F6F9;
+    --Grey: #7A7A7A
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+}
+
+h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+}
+
+
+button {
+    background-color: var(--Pink);
+    font-family: 'roboto', sans-serif;
+    border-radius: 40px;
+    height: 60px;
+    width: 200px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    color: var(--Lightgrey);
+    border: none;
+    padding: 12px 24px;
+    text-transform: uppercase;
+
+}
+a:link {
+    text-decoration: none;
+}
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+
+
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 5px solid var(--Purple);*/
+}
+
+.inner-container {
+    flex-basis: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 40px 350px;
+    border: 5px solid orange;
+}
+
+
+
+.text-settings {
+
+}
+
+.article-settings-section-2 {
+
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+
+
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+.inner-container-header {
+
+}
+
+
+.header-text {
+    background-color: #6149e8;
+    color: white;
+}
+
+.header-text p {
+    font-size: 24px;
+    font-weight: 300;
+
+}
+
+.header-nav a:link {
+    color: var(--Lightgrey);
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px 140px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 400px;
+
+}
+
+.header-nav ul li {
+    font-size: 20px;
+}
+
+.image-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#image\ header {
+    height: 5em;
+}
+
+/* --------------- 4.2 section 1 ------------------- */
+.container-section-1 {
+    color: #4845E4;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'roboto', serif;
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 75px;
+    padding-bottom: 80px;
+    border: dashed black 3px;
+
+}
+
+/* --------------- 4.2 section 2 ------------------- */
+.section-2 {
+    background-color: var(--Lightgrey);
+
+
+}
+.article-section-2 {
+    flex-basis: 500px;
+
+    display: flex;
+    flex-direction: column;
+    border: orange dashed;
+
+}
+.article-settings-section-2 {
+    display: flex;
+    flex-direction: row;
+    border: greenyellow dashed;
+    margin: 45px;
+}
+
+.article-settings-section-2-div {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-evenly;
+    border: #ED4385 dashed;
+    padding: 110px;
+ }
+
+.article-settings-section-2-div img {
+    width: 15%;
+}
+
+.article-settings-section-2-div a{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+ .article-image-section-2 {
+     display: flex;
+     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+ /*    size afbeelding  */
+
+ }
+
+/* --------------- 4.2 section 3 ------------------- */
+.section-3 {
+
+}
+
+.article-section-3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+
+}
+
+.article-settings-section-3 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 373px;
+    border: var(--Blue);
+
+}
+.article-section-3-img {
+    height: 3em;
+}
+
+.title-article {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* --------------- 4.2 section 4 ------------------- */
+.section-4 {
+    background-color: #6149e8;
+
+}
+
+.form-section-4 {
+    color: white;
+}
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
